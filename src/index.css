@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700;900&family=Roboto:wght@100;300;400;600;700;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --main_color: #016b61;
+    --submain_color: #70b2b2;
+    --light_color: #9ecfd4;
+    --alte_color: #e5e9c5;
+    --white: #ffffff;
+    --text-color: #4a5568;
+    --big_font: 48px;
+    --mid_font: 20px;
+    --small_font: 15px;
+    --h_font: "Montserrat", sans-serif;
+    --t_font: "Roboto", sans-serif;
+    --transition: 500ms ease-in-out;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    font-family: var(--t_font);
+    color: var(--text-color);
+  }
+}
+@layer components{
+  .btn{
+    @apply py-4 px-5 rounded-md
+  }
+  .input{
+    @apply w-full h-14 p-2 rounded-sm text-text
+  }
+}
